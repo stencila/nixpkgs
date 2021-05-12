@@ -8,7 +8,7 @@
 #   docker build . --target builder --tag stencila/nixta:builder
 #   docker run --rm -it -p 3000:3000 stencila/nixta:builder ./build/nixta serve
 
-FROM node:10 AS builder
+FROM node:16 AS builder
 WORKDIR /nixta
 # Copy package.json and install packages, instead of doing it whenever the src changes
 COPY package.json .
