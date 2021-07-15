@@ -28,7 +28,7 @@ RUN npm run build
 
 # TODO cleanup and condense into fewer RUN directives
 
-FROM ubuntu:18.10
+FROM ubuntu:20.04
 
 ENV NIX_VERSION=2.2.1 NIX_SHA=e229e28f250cad684c278c9007b07a24eb4ead239280c237ed2245871eca79e0
 RUN apt-get update \
